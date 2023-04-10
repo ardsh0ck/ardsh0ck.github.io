@@ -63,6 +63,7 @@
               viewBox="0 0 24 24"
               width="24"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <path
                 d="m18 18-6-6m0 0-6-6m6 6 6-6m-6 6-6 6"
@@ -90,6 +91,7 @@
             viewBox="0 0 24 24"
             width="24"
             xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
           >
             <path
               clip-rule="evenodd"
@@ -124,6 +126,7 @@
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <path
                   d="M8 10L12 14L16 10"
@@ -157,6 +160,7 @@
                   viewBox="0 0 24 24"
                   width="24"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <g fill="currentColor">
                     <path
@@ -180,6 +184,7 @@
                   viewBox="0 0 24 24"
                   width="24"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <path
                     d="m17.5 12c0 3.0376-2.4624 5.5-5.5 5.5-3.03757 0-5.5-2.4624-5.5-5.5m14.5 0c0 4.9706-4.0294 9-9 9-4.97056 0-9-4.0294-9-9 0-4.97056 4.02944-9 9-9 4.9706 0 9 4.02944 9 9z"
@@ -206,6 +211,7 @@
                   viewBox="0 0 24 24"
                   width="24"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <path
                     d="m12 8v4l2.5 2.5m6.5-2.5c0 4.9706-4.0294 9-9 9-4.97056 0-9-4.0294-9-9 0-4.97056 4.02944-9 9-9 4.9706 0 9 4.02944 9 9z"
@@ -225,6 +231,7 @@
                   viewBox="0 0 24 24"
                   width="24"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <path
                     d="m6 21-.99779.0665.06224.9335h.93555zm12 0v1h.9356l.0622-.9335zm-15-16h-1v2h1zm18 2h1v-2h-1zm-10 4v-1h-2v1zm-2 5v1h2v-1zm6-5v-1h-2v1zm-2 5v1h2v-1zm-8.99779-9.93348 1 14.99998 1.99558-.133-1-15.00002zm1.99779 15.93348h12v-2h-12zm12.9978-.9335 1-14.99998-1.9956-.13304-1 15.00002zm.0022-16.0665h-14v2h14zm-16 2h2v-2h-2zm16 0h2v-2h-2zm-10 4v5h2v-5zm4 0v5h2v-5zm-1-7c1.3965 0 2.5725.95512 2.9055 2.24926l1.9369-.49852c-.555-2.15632-2.5112-3.75074-4.8424-3.75074zm-2.90555 2.24926c.33309-1.29414 1.50905-2.24926 2.90555-2.24926v-2c-2.33117 0-4.28742 1.59442-4.84242 3.75074z"
@@ -337,10 +344,8 @@
         imageContainer.appendChild(img)
         imageContainer.appendChild(body)
         body.appendChild(textContainer)
-
         textContainer.appendChild(heading)
         textContainer.appendChild(text)
-
         body.appendChild(buttons)
         buttons.appendChild(saveButton)
         buttons.appendChild(shareButton)
@@ -416,7 +421,6 @@
         }
       }
 
-      // Run it initially
       handleDeviceChange(smallDevice)
     </script>
   </body>
