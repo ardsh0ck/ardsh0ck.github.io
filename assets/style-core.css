@@ -4011,7 +4011,11 @@ input[type='submit'].btn-block {
 .nav {
   padding-left: 0;
   margin-bottom: 0;
-  list-style: none;
+}
+
+.menu-items .nav::before,
+.menu-items.nav::after {
+  display: none;
 }
 
 .nav > li {
@@ -5571,12 +5575,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 @media (min-width: 768px) {
   .navbar-nav {
-    float: left;
     margin: 0;
   }
-  .navbar-nav > li {
-    float: left;
-  }
+
   .navbar-nav > li > a {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -10680,6 +10681,11 @@ body.search #company-search a.advanced-search:hover {
   background-color: #fff;
 }
 
+.subsiteBody .navbar::before,
+.subsiteBody .navbar::after {
+  display: none;
+}
+
 .navbar .title {
   font-size: 22px;
   color: #fff;
@@ -10728,9 +10734,14 @@ body.search #company-search a.advanced-search:hover {
 }
 
 .navbar .site-menu-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
   color: #474747;
   font-size: 20px;
-  padding-top: 22px;
 }
 
 .navbar .site-menu-icon:before {
@@ -10844,14 +10855,22 @@ body.search #company-search a.advanced-search:hover {
 
 @media (max-width: 767px) {
   .navbar .search-collapse-button {
-    display: block !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
   }
+
   table.navbar .search-collapse-button {
     display: table !important;
   }
+
   tr.navbar .search-collapse-button {
     display: table-row !important;
   }
+
   td.navbar .search-collapse-button,
   th.navbar .search-collapse-button {
     display: table-cell !important;
@@ -10911,6 +10930,7 @@ body.search #company-search a.advanced-search:hover {
 
 .navbar .nav-flex .nav-wrapper #main-nav {
   display: flex;
+  align-items: center;
   margin: 0;
   float: right;
 }
@@ -10927,6 +10947,7 @@ body.search #company-search a.advanced-search:hover {
 @media (max-width: 480px) {
   .navbar .nav-flex .nav-wrapper #main-nav {
     width: 100%;
+    height: 100%;
     justify-content: flex-end;
   }
 }
@@ -11155,10 +11176,8 @@ body.search #company-search a.advanced-search:hover {
 
 .navbar-secondary ul li {
   list-style: none;
-  margin-right: 20px;
   text-transform: uppercase;
   font-size: 12px;
-  display: inline-block;
   color: #fff;
 }
 
@@ -11189,6 +11208,18 @@ body.search #company-search a.advanced-search:hover {
 
 .footer-menu {
   margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.footer-menu.container:before,
+.footer-menu.container::after {
+  display: none;
 }
 
 .footer-menu div {

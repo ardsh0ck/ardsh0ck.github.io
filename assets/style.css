@@ -3161,7 +3161,6 @@ html
 
 .footer {
   background-color: #eee;
-  clear: both;
   padding: 20px;
   box-shadow: 0 50vh 0 50vh #eee;
 }
@@ -3170,6 +3169,7 @@ html
   .footer {
     padding: 0;
   }
+  
   .footer .full-width {
     max-width: 1500px;
     margin: 0 auto;
@@ -8740,9 +8740,7 @@ body.full-screen {
 }
 
 #premium-preview-benefits {
-  -moz-column-count: 1;
-  column-count: 1;
-  -moz-column-gap: 15px;
+  display: grid;
   column-gap: 15px;
   list-style: none inside none;
   padding-left: 0;
@@ -8753,8 +8751,7 @@ body.full-screen {
 
 @media (min-width: 768px) {
   #premium-preview-benefits {
-    -moz-column-count: 2;
-    column-count: 2;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

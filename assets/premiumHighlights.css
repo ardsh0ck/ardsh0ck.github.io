@@ -1,3 +1,19 @@
+.top-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .top-menu {
+    flex-direction: row;
+  }
+}
+
 .premium-options .options {
   text-align: center;
 }
@@ -21,6 +37,29 @@ html body #premium-highlights .ribbon-wrapper h3 span.corner-ribbon {
   margin-top: 15px;
 }
 
+.payment-methods-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+  list-style: none;
+}
+
+.payment-methods-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+@media (min-width: 768px) {
+  .payment-methods-list li {
+    width: auto;
+  }
+}
+
 .subsiteBody .subsiteContent .section-payment-methods .payment-method-icon {
   margin: 7px 0;
 }
@@ -35,11 +74,11 @@ html body #premium-highlights .ribbon-wrapper h3 span.corner-ribbon {
   padding: 0;
 }
 
-html #premium-highlights header {
+#premium-highlights header {
   padding: 25px;
 }
 
-html #premium-highlights header h1 {
+#premium-highlights header h1 {
   text-align: center;
   margin: 0;
   font-size: 25px;
@@ -47,33 +86,36 @@ html #premium-highlights header h1 {
 }
 
 @media (max-width: 768px) {
-  html #premium-highlights header h1 > span {
+  #premium-highlights header h1 > span {
     display: block;
   }
 }
 
-html #premium-highlights .container {
+#premium-highlights .container {
   padding: 0;
 }
 
-html #premium-highlights .container.tabs.nav {
+#premium-highlights .container.tabs.nav {
   padding: 30px 20px 10px;
   margin-bottom: 0;
   margin-top: 20px;
 }
 
-html #premium-highlights .container.tabs.nav li.active a {
+#premium-highlights .container.tabs.nav li.active a {
   background-color: #1eb082;
   color: #fff;
 }
 
-html #premium-highlights .ribbon-wrapper {
+.ribbon-wrapper {
   position: relative;
-  overflow: hidden;
   padding: 2px;
 }
 
-html #premium-highlights .ribbon-wrapper h3 span {
+.ribbon-wrapper .panel {
+  height: 100%;
+}
+
+#premium-highlights .ribbon-wrapper h3 span {
   position: relative;
   text-align: center;
   text-transform: uppercase;
@@ -82,11 +124,11 @@ html #premium-highlights .ribbon-wrapper h3 span {
   color: #fff;
 }
 
-html #premium-highlights .ribbon-wrapper h3 span.corner-ribbon {
+#premium-highlights .ribbon-wrapper h3 span.corner-ribbon {
   font-size: 9px;
 }
 
-html #premium-highlights .ribbon-wrapper h3 span.discount {
+#premium-highlights .ribbon-wrapper h3 span.discount {
   text-transform: none;
   -webkit-hyphens: none;
   hyphens: none;
@@ -95,7 +137,7 @@ html #premium-highlights .ribbon-wrapper h3 span.discount {
   margin-left: 0;
 }
 
-html #premium-highlights .ribbon-wrapper h3 span.discount-sticker {
+#premium-highlights .ribbon-wrapper h3 span.discount-sticker {
   background: #5c1a99;
   border-radius: 5px;
   padding: 3px;
@@ -104,45 +146,50 @@ html #premium-highlights .ribbon-wrapper h3 span.discount-sticker {
 }
 
 @media (max-width: 992px) {
-  html #premium-highlights .ribbon-wrapper h3 span {
+  #premium-highlights .ribbon-wrapper h3 span {
     display: none;
   }
-  html #premium-highlights .ribbon-wrapper h3 span.discount {
+  #premium-highlights .ribbon-wrapper h3 span.discount {
     display: block;
     font-size: 14px;
   }
-  html #premium-highlights .ribbon-wrapper h3 span.corner-ribbon {
+  #premium-highlights .ribbon-wrapper h3 span.corner-ribbon {
     display: none;
   }
 }
 
-html #premium-highlights section,
-html #premium-highlights section.container {
+#premium-highlights section,
+#premium-highlights section.container {
   padding: 20px 30px;
 }
 
-html #premium-highlights section {
+#premium-highlights section {
   position: relative;
   background-repeat: no-repeat;
 }
 
-html #premium-highlights section.slide {
+#premium-highlights .slide {
   padding: 40px;
-  -webkit-hyphens: none;
   hyphens: none;
-  margin-bottom: 20px;
+  background-color: #fff;
 }
 
-html #premium-highlights section.slide .slide-description .slide-secondary {
+@media (min-width: 768px) {
+  #premium-highlights .slide {
+    margin-bottom: 20px;
+  }
+}
+
+#premium-highlights section.slide .slide-description .slide-secondary {
   text-transform: uppercase;
   display: block;
 }
 
-html #premium-highlights section.slide .section-title {
+#premium-highlights section.slide .section-title {
   padding-bottom: 5px;
 }
 
-html #premium-highlights section.slide .section-title h2 {
+#premium-highlights section.slide .section-title h2 {
   padding-left: 40px;
   margin-top: 15px;
   text-transform: uppercase;
@@ -150,7 +197,7 @@ html #premium-highlights section.slide .section-title h2 {
   font-size: 28px;
 }
 
-html #premium-highlights section.slide .section-title .slide-icon {
+#premium-highlights section.slide .section-title .slide-icon {
   width: 30px;
   height: 30px;
   float: left;
@@ -174,17 +221,17 @@ html
   zoom: 0.35;
 }
 
-html #premium-highlights section.slide .section-title .slide-icon .glyphicon {
+#premium-highlights section.slide .section-title .slide-icon .glyphicon {
   line-height: 30px;
   color: #fff;
   font-size: 15px;
 }
 
-html #premium-highlights section.premium-highlights-promo {
+#premium-highlights section.premium-highlights-promo {
   padding: 0;
 }
 
-html #premium-highlights section.premium-highlights-promo .about-us-box {
+#premium-highlights section.premium-highlights-promo .about-us-box {
   padding: 0;
   margin: 15px;
   background-color: #fff;
@@ -192,7 +239,7 @@ html #premium-highlights section.premium-highlights-promo .about-us-box {
   hyphens: none;
 }
 
-html #premium-highlights section.premium-highlights-promo .about-us-box h2 {
+#premium-highlights section.premium-highlights-promo .about-us-box h2 {
   margin-bottom: 20px;
   margin-top: 0;
   padding-top: 20px;
@@ -201,7 +248,7 @@ html #premium-highlights section.premium-highlights-promo .about-us-box h2 {
   padding-right: 15px;
 }
 
-html #premium-highlights section.premium-highlights-promo .about-us-box span {
+#premium-highlights section.premium-highlights-promo .about-us-box span {
   line-height: 1.5;
 }
 
@@ -214,14 +261,14 @@ html
 }
 
 @media (min-width: 992px) {
-  html #premium-highlights section.premium-highlights-promo .about-us-box.b {
+  #premium-highlights section.premium-highlights-promo .about-us-box.b {
     background: url(./../img/large/premium-highlights/promo_cyber_week_b.jpeg)
       no-repeat 220px 12%;
   }
 }
 
 @media (min-width: 992px) {
-  html #premium-highlights section.premium-highlights-promo .about-us-box {
+  #premium-highlights section.premium-highlights-promo .about-us-box {
     padding: 0 30px;
     margin: 0;
     background: url(./../img/large/premium-highlights/promo_cyber_week.jpeg)
@@ -248,7 +295,7 @@ html
   }
 }
 
-html #premium-highlights section.premium-highlights-promo .bubble {
+.bubble {
   border-radius: 50%;
   position: relative;
   color: #fff;
@@ -257,10 +304,10 @@ html #premium-highlights section.premium-highlights-promo .bubble {
   width: 170px;
   height: 150px;
   font-size: 14px;
-  left: 15%;
+  margin: 0 auto;
 }
 
-html #premium-highlights section.premium-highlights-promo .bubble.sticker {
+.bubble.sticker {
   border-radius: 10px;
   background-color: #5c1a99;
   padding-top: 10px;
@@ -270,29 +317,18 @@ html #premium-highlights section.premium-highlights-promo .bubble.sticker {
   text-transform: uppercase;
 }
 
-html
-  #premium-highlights
-  section.premium-highlights-promo
-  .bubble.sticker
-  .discount-percent {
+.bubble.sticker .discount-percent {
   font-size: 60px;
   margin-top: 5px;
 }
 
-html
-  #premium-highlights
-  section.premium-highlights-promo
-  .bubble.sticker
-  .text-normal {
+.bubble.sticker .text-normal {
   font-weight: 700;
   font-size: 9px;
   margin-top: 5px;
 }
 
-html
-  #premium-highlights
-  section.premium-highlights-promo
-  .bubble.bubble-day-counter {
+.bubble.bubble-day-counter {
   border-radius: 0 0 10px 10px;
   width: 170px;
   height: 50px;
@@ -303,19 +339,11 @@ html
   margin-top: -10px;
 }
 
-html
-  #premium-highlights
-  section.premium-highlights-promo
-  .bubble.bubble-day-counter
-  span.phrase {
+.bubble.bubble-day-counter span.phrase {
   font-weight: 700;
 }
 
-html
-  #premium-highlights
-  section.premium-highlights-promo
-  .bubble.bubble-day-counter
-  span.phrase.phrase-today {
+.bubble.bubble-day-counter span.phrase.phrase-today {
   display: block;
   margin-top: 0;
   font-size: 14px;
@@ -339,10 +367,10 @@ html
 }
 
 @media (min-width: 992px) {
-  html #premium-highlights section.premium-highlights-promo .bubble {
+  #premium-highlights section.premium-highlights-promo .bubble {
     position: absolute;
   }
-  html #premium-highlights section.premium-highlights-promo .bubble.sticker {
+  #premium-highlights section.premium-highlights-promo .bubble.sticker {
     left: 480px;
     right: auto;
     top: 40px;
@@ -357,25 +385,13 @@ html
   }
 }
 
-@media (max-width: 991px) {
-  html #premium-highlights section.premium-highlights-promo .bubble-parent {
-    padding: 20px 0;
-    background: url(./../img/large/premium-highlights/premium-promo-gift-small-2019.jpg)
-      no-repeat 0 0;
-    background-size: cover;
-  }
-  html #premium-highlights section.premium-highlights-promo .bubble {
-    left: 10%;
-  }
-}
-
-html #premium-highlights section.premium-highlights-promo .about-us-list {
+#premium-highlights section.premium-highlights-promo .about-us-list {
   font-size: 15px;
   padding-left: 0;
   color: #474747;
 }
 
-html #premium-highlights section.premium-highlights-promo .about-us-list li {
+#premium-highlights section.premium-highlights-promo .about-us-list li {
   margin-bottom: 15px;
 }
 
@@ -397,15 +413,18 @@ html
   }
 }
 
-html #premium-highlights section.premium-highlights-promo .annotation {
+#premium-highlights section.premium-highlights-promo .annotation {
   margin-top: 20px;
   font-size: 11px;
   color: #8a8a8a;
   padding: 10px 30px;
 }
 
-html #premium-highlights section.premium-highlights-promo .premium-options {
-  padding: 20px 30px;
+.subscribe-options {
+  display: grid;
+  gap: 22px;
+  padding: 20px 45px;
+  list-style: none;
 }
 
 html
@@ -480,25 +499,11 @@ html
 }
 
 @media (min-width: 768px) {
-  html #premium-highlights section.premium-highlights-promo .premium-options {
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+  .subscribe-options {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 33px;
   }
-  html
-    #premium-highlights
-    section.premium-highlights-promo
-    .premium-options
-    > div {
-    margin: 0 15px;
-    flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    max-width: 50%;
-  }
+
   html
     #premium-highlights
     section.premium-highlights-promo
@@ -509,7 +514,7 @@ html
   }
 }
 
-html #premium-highlights section.premium-highlights-promo .trust-box {
+#premium-highlights section.premium-highlights-promo .trust-box {
   display: block;
 }
 
@@ -521,7 +526,7 @@ html
   max-width: 100%;
 }
 
-html #premium-highlights section.premium-highlights-promo .trust-box .logo-box {
+#premium-highlights section.premium-highlights-promo .trust-box .logo-box {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -541,108 +546,120 @@ html
 }
 
 @media (min-width: 1200px) {
-  html #premium-highlights section.premium-highlights-promo .trust-box {
+  #premium-highlights section.premium-highlights-promo .trust-box {
     background-size: contain;
   }
 }
 
-html #premium-highlights section.section-network .background {
-  background: url(./../img/large/premium-highlights/premium-connection-graph-2019.png)
-    no-repeat center center;
+#premium-highlights .section-network {
+  background-image: url(./../img/large/premium-highlights/premium-connection-graph-2019.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (min-width: 992px) {
-  html #premium-highlights section.section-network {
+  #premium-highlights .section-network {
     height: 500px;
-    background: #fff
-      url(./../img/large/premium-highlights/premium-connection-graph-2019.png)
-      no-repeat right bottom/contain;
+    background-image: url(./../img/large/premium-highlights/premium-connection-graph-2019.png);
+    background-repeat: no-repea;
+    background-position: right bottom;
+    background-size: contain;
   }
 }
 
-html #premium-highlights section.section-statistics .background {
-  background: url(./../img/large/premium-highlights/premium-stats-2019.png)
-    no-repeat center center;
+#premium-highlights .section-statistics {
+  background-image: url(./../img/large/premium-highlights/premium-stats-2019.png);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 @media (min-width: 992px) {
-  html #premium-highlights section.section-statistics {
+  #premium-highlights .section-statistics {
     height: 495px;
-    background: #fff
-      url(./../img/large/premium-highlights/premium-stats-2019.png) no-repeat
-      left bottom;
+    background-image: url(./../img/large/premium-highlights/premium-stats-2019.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
   }
 }
 
-html #premium-highlights section.section-finances .background {
-  background: url(./../img/large/premium-highlights/premium-finances-2022.png)
-    no-repeat center center;
+#premium-highlights .section-finances {
+  background-image: url(./../img/large/premium-highlights/premium-finances-2022.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 @media (min-width: 992px) {
-  html #premium-highlights section.section-finances {
+  #premium-highlights .section-finances {
     height: 668px;
-    background: #fff
-      url(./../img/large/premium-highlights/premium-finances-2022.png) no-repeat
-      center center/cover;
+    background-image: url(./../img/large/premium-highlights/premium-finances-2022.png);
   }
-  html #premium-highlights section.section-finances .slide-text {
+
+  #premium-highlights .section-finances .slide-text {
     background-color: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
 }
 
-html #premium-highlights section.section-search .background {
-  background: url(./../img/large/premium-highlights/premium-search-cut-2019.png)
-    no-repeat 75px -270px;
+#premium-highlights .section-search {
+  background-image: url(./../img/large/premium-highlights/premium-search-cut-2019.png);
+  background-repeat: no-repeat;
+  background-size: 75px -270px;
 }
 
 @media (min-width: 992px) {
-  html #premium-highlights section.section-search {
+  #premium-highlights .section-search {
     height: 470px;
-    background: #fff
-      url(./../img/large/premium-highlights/premium-search-cut-2019.png)
-      no-repeat left center/contain;
+    background-image: url(./../img/large/premium-highlights/premium-search-cut-2019.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
   }
-  html #premium-highlights section.section-search .slide-text {
+
+  #premium-highlights .section-search .slide-text {
     width: 40%;
   }
 }
 
-html #premium-highlights section.section-alerts .background {
-  background: url(./../img/large/premium-highlights/premium-monitoring-cut-2019.png)
-    no-repeat center center;
+#premium-highlights .section-alerts {
+  background-image: url(./../img/large/premium-highlights/premium-monitoring-cut-2019.png);
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 @media (min-width: 992px) {
-  html #premium-highlights section.section-alerts {
+  #premium-highlights .section-alerts {
     height: 400px;
-    background: #fff
-      url(./../img/large/premium-highlights/premium-monitoring-2019.png)
-      no-repeat right center/90%;
+    background-image: url(./../img/large/premium-highlights/premium-monitoring-2019.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 90%;
   }
-  html #premium-highlights section.section-alerts .slide-text {
+
+  #premium-highlights .section-alerts .slide-text {
     width: 70%;
   }
 }
 
-html #premium-highlights section.section-noads .background {
-  background: url(./../img/large/premium-highlights/premium-contact-info-2019.png)
-    no-repeat center center;
+#premium-highlights .section-noads .background {
+  background-image: url(./../img/large/premium-highlights/premium-contact-info-2019.png);
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 @media (min-width: 992px) {
-  html #premium-highlights section.section-noads {
+  #premium-highlights .section-noads {
     height: 430px;
-    background: #fff
-      url(./../img/large/premium-highlights/premium-contact-info-2019.png)
-      no-repeat left center/45%;
+    background-image: url(./../img/large/premium-highlights/premium-contact-info-2019.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 45%;
   }
 }
 
-html #premium-highlights #sticky-footer {
+#premium-highlights #sticky-footer {
   width: 100%;
   height: 0;
   position: fixed;
@@ -655,7 +672,7 @@ html #premium-highlights #sticky-footer {
   z-index: 1;
 }
 
-html #premium-highlights #sticky-footer .premium-highlights-checkout {
+#premium-highlights #sticky-footer .premium-highlights-checkout {
   background-color: transparent;
   padding: 15px 70px;
   box-shadow: none;
@@ -709,7 +726,7 @@ html
   color: #1eb082;
 }
 
-html #premium-highlights #to-top {
+#premium-highlights #to-top {
   display: none;
   color: #fff;
   cursor: pointer;
@@ -722,70 +739,83 @@ html #premium-highlights #to-top {
   right: 100px;
 }
 
-html #premium-highlights #to-top.guest {
+#premium-highlights #to-top.guest {
   right: 200px;
 }
 
-html #premium-highlights #to-top .table-option-icon {
+#premium-highlights #to-top .table-option-icon {
   background-color: transparent;
   color: #8a8a8a;
 }
 
-html #premium-highlights #details table {
+#premium-highlights #details table {
   width: 100%;
 }
 
-html #premium-highlights #details table thead th {
+#premium-highlights #details table thead th {
   padding: 20px 0 10px;
 }
 
-html #premium-highlights #details table thead th:first-child {
+#premium-highlights #details table thead th:first-child {
   font-weight: 400;
-  font-size: 24px;
-}
-
-html #premium-highlights #details table thead th:not(:first-child) {
-  font-weight: 700;
-  font-size: 20px;
-}
-
-html #premium-highlights #details table tbody {
-  border-top: 3px solid #eee;
-}
-
-html #premium-highlights #details table tbody h4 {
   font-size: 16px;
 }
 
-html #premium-highlights #details table tbody p {
+@media (min-width: 768px) {
+  #premium-highlights #details table thead th:first-child {
+    font-size: 24px;
+  }
+}
+
+#premium-highlights #details table thead th:not(:first-child) {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  #premium-highlights #details table thead th:not(:first-child) {
+    font-size: 20px;
+  }
+}
+
+#premium-highlights #details table tbody {
+  border-top: 3px solid #eee;
+}
+
+#premium-highlights #details table tbody h4 {
+  font-size: 16px;
+}
+
+#premium-highlights #details table tbody p {
   color: #555;
 }
 
-html #premium-highlights #details table tbody .glyphicon-ok {
+#premium-highlights #details table tbody .glyphicon-ok {
   color: #1eb082;
 }
 
-html #premium-highlights #details table tbody:after,
-html #premium-highlights #details table tbody:before {
+#premium-highlights #details table tbody:after,
+#premium-highlights #details table tbody:before {
   content: '';
   display: block;
   height: 20px;
 }
 
-html #premium-highlights #details table th:nth-child(2),
-html #premium-highlights #details table tr td:nth-child(2) {
-  width: 12%;
+#premium-highlights #details table th:nth-child(2),
+#premium-highlights #details table tr td:nth-child(2) {
+  width: 20%;
+  padding-right: 10px;
   text-align: center;
 }
 
-html #premium-highlights #details table th:nth-child(3),
-html #premium-highlights #details table tr td:nth-child(3) {
-  width: 14%;
+#premium-highlights #details table th:nth-child(3),
+#premium-highlights #details table tr td:nth-child(3) {
+  width: 20%;
   text-align: center;
 }
 
-html #premium-highlights #premium-preview-company-list {
-  column-count: 1;
+#premium-preview-company-list {
+  display: grid;
   column-gap: 15px;
   list-style: none inside none;
   padding-left: 0;
@@ -794,12 +824,12 @@ html #premium-highlights #premium-preview-company-list {
 }
 
 @media (min-width: 768px) {
-  html #premium-highlights #premium-preview-company-list {
-    column-count: 2;
+  #premium-preview-company-list {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-html #premium-highlights #premium-preview-company-list li a {
+#premium-highlights #premium-preview-company-list li a {
   display: block;
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
@@ -809,72 +839,72 @@ html #premium-highlights #premium-preview-company-list li a {
   position: relative;
 }
 
-html #premium-highlights #premium-preview-company-list li a:hover {
+#premium-highlights #premium-preview-company-list li a:hover {
   background-color: #eee;
 }
 
-html #premium-highlights #premium-preview-company-list li a .city {
+#premium-highlights #premium-preview-company-list li a .city {
   display: block;
   color: #777;
 }
 
-html #premium-highlights #faq p {
+#premium-highlights #faq p {
   color: #555;
 }
 
 @media (max-width: 991px) {
-  html #premium-highlights {
+  #premium-highlights {
     margin-top: 0;
   }
-  html #premium-highlights h1,
-  html #premium-highlights h2 {
+  #premium-highlights h1,
+  #premium-highlights h2 {
     text-align: center;
   }
-  html #premium-highlights section,
-  html #premium-highlights section.container {
+  #premium-highlights section,
+  #premium-highlights section.container {
     padding: 20px 10px;
     border-bottom: 1px solid #ddd;
   }
-  html #premium-highlights section.container.premium-highlights-promo > h2,
-  html #premium-highlights section.premium-highlights-promo > h2 {
+  #premium-highlights section.container.premium-highlights-promo > h2,
+  #premium-highlights section.premium-highlights-promo > h2 {
     margin-top: 20px;
   }
   html
     #premium-highlights
     section.container.premium-highlights-promo
     .about-us-list,
-  html #premium-highlights section.premium-highlights-promo .about-us-list {
+  #premium-highlights section.premium-highlights-promo .about-us-list {
     margin-left: 0;
   }
   html
     #premium-highlights
     section.container.premium-highlights-promo
     .annotation,
-  html #premium-highlights section.premium-highlights-promo .annotation {
+  #premium-highlights section.premium-highlights-promo .annotation {
     margin-top: 20px;
   }
-  html #premium-highlights section .background,
-  html #premium-highlights section.container .background {
+  #premium-highlights section .background,
+  #premium-highlights section.container .background {
     height: 100px;
   }
-  html #premium-highlights section .slide-text,
-  html #premium-highlights section.container .slide-text {
+  #premium-highlights section .slide-text,
+  #premium-highlights section.container .slide-text {
     background-color: #fff;
     opacity: 0.95;
     padding: 15px;
     margin: 0 15px;
   }
-  html #premium-highlights section .slide-text .section-title,
-  html #premium-highlights section.container .slide-text .section-title {
+  #premium-highlights section .slide-text .section-title,
+  #premium-highlights section.container .slide-text .section-title {
     padding: 10px 0;
   }
-  html #premium-highlights section .slide-text img,
-  html #premium-highlights section.container .slide-text img {
+  #premium-highlights section .slide-text img,
+  #premium-highlights section.container .slide-text img {
     height: 30px;
     margin: 0 15px 0 0;
   }
-  html #premium-highlights section .slide-text h2,
-  html #premium-highlights section.container .slide-text h2 {
+  #premium-highlights section .slide-text h2,
+  #premium-highlights section.container .slide-text h2 {
     font-size: 22px;
     margin-top: 0;
     text-align: left;
