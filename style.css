@@ -308,8 +308,20 @@ input:not(:placeholder-shown) + .input__label {
   background-size: cover;
 }
 
+@supports (height: 100svh) {
+  .page {
+    position: relative;
+    height: 100svh;
+    padding-top: 37px;
+    overflow: hidden;
+    background: url('./assests/bg.jpg') center;
+    background-size: cover;
+  }
+}
+
 @media (min-width: 1280px) {
   .page {
+    height: 100vh;
     padding-top: 233px;
   }
 }
